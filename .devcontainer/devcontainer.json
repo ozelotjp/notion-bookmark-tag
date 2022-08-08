@@ -1,0 +1,31 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  // container
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspace",
+  // vscode
+  "extensions": [
+    // HTML
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    // CSS
+    "Syler.sass-indented",
+    // Vue
+    "vue.volar",
+    // Linter
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto"
+      }
+    ]
+  }
+}
